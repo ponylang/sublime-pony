@@ -1,4 +1,4 @@
-pony_sublime_text
+sublime-pony
 =================
 
-Pony language plugin for Sublime Text 2/3
+Pony Language plugin for Sublime Text 2/3
