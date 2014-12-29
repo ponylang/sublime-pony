@@ -5,7 +5,7 @@
 	<key>name</key>
 	<string>Symbol List</string>
 	<key>scope</key>
-	<string>source.pony entity.name.type.declaration.pony</string>
+	<string>source.pony entity.name.type.pony, source.pony entity.name.function.pony</string>
 	<key>settings</key>
 	<dict>
 		<key>showInSymbolList</key>

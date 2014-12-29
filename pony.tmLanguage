@@ -20,7 +20,11 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#declarations</string>
+			<string>#typedeclarations</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#methoddeclarations</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -81,7 +85,7 @@
 				</dict>
 			</array>
 		</dict>
-		<key>declarations</key>
+		<key>methoddeclarations</key>
 		<dict>
 			<key>captures</key>
 			<dict>
@@ -93,11 +97,39 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.declaration.pony</string>
+					<string>keyword.other.capability.pony</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.capability.pony</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.function.pony</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(type|interface|trait|primitive|class|actor)\s+@?\s*([_A-Z][_a-zA-Z0-9\']*)</string>
+			<string>\b(new|be|fun)\s+((iso|trn|ref|val|box|tag)\s+)?([_a-z][_a-zA-Z0-9]*)</string>
+		</dict>
+		<key>typedeclarations</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.declaration.pony</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.type.pony</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>\b(type|interface|trait|primitive|class|actor)\s+@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
 		</dict>
 		<key>identifiers</key>
 		<dict>
@@ -105,7 +137,7 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(_*[A-Z][_a-zA-Z0-9\']*)\b</string>
+					<string>\b(_*[A-Z][_a-zA-Z0-9]*)\b</string>
 					<key>name</key>
 					<string>entity.name.class.pony</string>
 				</dict>
@@ -138,12 +170,6 @@
 					<string>\b(var|let)\b</string>
 					<key>name</key>
 					<string>keyword.other.pony</string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>\b(new|be|fun)\b</string>
-					<key>name</key>
-					<string>keyword.other.method.pony</string>
 				</dict>
 				<dict>
 					<key>match</key>
