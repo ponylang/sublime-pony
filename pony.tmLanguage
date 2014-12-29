@@ -169,7 +169,7 @@
 					<key>match</key>
 					<string>\b(var|let)\b</string>
 					<key>name</key>
-					<string>keyword.other.pony</string>
+					<string>keyword.other.declaration.pony</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -268,7 +268,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.quoted.pony</string>
+					<string>constant.character.pony</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -307,7 +307,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.unquoted.pony</string>
+					<string>string.quoted.triple.pony</string>
 				</dict>
 				<dict>
 					<key>begin</key>
@@ -331,7 +331,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.quoted.pony</string>
+					<string>string.quoted.double.pony</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -353,7 +353,5 @@
 	</dict>
 	<key>scopeName</key>
 	<string>source.pony</string>
-<!-- 	<key>uuid</key>
-	<string>e431a2d7-c769-452e-90d7-350c703c7eb1</string> -->
 </dict>
 </plist>
