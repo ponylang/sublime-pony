@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Indent</string>
+	<key>scope</key>
+	<string>source.pony</string>
+	<key>settings</key>
+	<dict>
+		<key>decreaseIndentPattern</key>
+		<string>(?x)
+			^\s*(then|else|elseif|do|until|end|\|.*=&gt;|=&gt;)
+		</string>
+		<key>increaseIndentPattern</key>
+		<string>(?x)
+			 ^\s*(type|interface|trait|primitive|class|actor)\b.*$
+			|^.*\b(if|then|else|elseif|for|in|do|while|repeat|until|try|with|match|object)\b((?!end).)*$
+			|^.*\([^\)]*$
+			|^.*\[[^\]]*$
+			|^.*=&gt;.*$
+		</string>
+	</dict>
+</dict>
+</plist>
