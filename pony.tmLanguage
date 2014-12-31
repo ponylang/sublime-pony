@@ -102,16 +102,11 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>keyword.other.capability.pony</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
 					<string>entity.name.function.pony</string>
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(new|be|fun)\s+((iso|trn|ref|val|box|tag)\s+)?([_a-z][_a-zA-Z0-9]*)</string>
+			<string>\b(new|be|fun)\s+(iso|trn|ref|val|box|tag)?\s*([_a-z][_a-zA-Z0-9]*)</string>
 		</dict>
 		<key>typedeclarations</key>
 		<dict>
@@ -125,7 +120,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.type.pony</string>
+					<string>entity.other.inherited-class.pony</string>
 				</dict>
 			</dict>
 			<key>match</key>
@@ -136,17 +131,53 @@
 			<key>patterns</key>
 			<array>
 				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.pony</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\b(_*[a-z][_a-zA-Z0-9]*)\s*(\(|\[)</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.pony</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>\.\s*(_*[a-z][_a-zA-Z0-9]*)\b[^\(\]]</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>support.function.pony</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>@\s*([_a-zA-z][_a-zA-Z0-9]*)\s*(\(|\[)</string>
+				</dict>
+				<dict>
 					<key>match</key>
 					<string>\b(_*[A-Z][_a-zA-Z0-9]*)\b</string>
 					<key>name</key>
 					<string>entity.name.class.pony</string>
 				</dict>
-				<dict>
+<!-- 				<dict>
 					<key>match</key>
 					<string>\b(_+[a-z][_a-zA-Z0-9\']*)\b</string>
 					<key>name</key>
 					<string>variable.parameter.pony</string>
-				</dict>
+				</dict> -->
 			</array>
 		</dict>
 		<key>keywords</key>
@@ -175,7 +206,7 @@
 					<key>match</key>
 					<string>\b(iso|trn|ref|val|box|tag)\b</string>
 					<key>name</key>
-					<string>keyword.other.capability.pony</string>
+					<string>entity.other.attribute-name.pony</string>
 				</dict>
 				<dict>
 					<key>match</key>
@@ -195,7 +226,7 @@
 					<key>name</key>
 					<string>keyword.control.loop.pony</string>
 				</dict>
-				<dict>
+<!-- 				<dict>
 					<key>match</key>
 					<string>(\-|\+|\*|/(?![/*])|%|&lt;&lt;|&gt;&gt;)</string>
 					<key>name</key>
@@ -230,7 +261,7 @@
 					<string>(\||\&amp;|\,|\^)</string>
 					<key>name</key>
 					<string>keyword.operator.type.pony</string>
-				</dict>
+				</dict> -->
 			</array>
 		</dict>
 		<key>line-comments</key>
@@ -307,7 +338,8 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>string.quoted.triple.pony</string>
+					<!-- <string>string.quoted.triple.pony</string> -->
+					<string>variable.parameter.pony</string>
 				</dict>
 				<dict>
 					<key>begin</key>
