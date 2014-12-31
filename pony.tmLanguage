@@ -120,7 +120,7 @@
 				<key>2</key>
 				<dict>
 					<key>name</key>
-					<string>entity.other.inherited-class.pony</string>
+					<string>entity.name.type.pony</string>
 				</dict>
 			</dict>
 			<key>match</key>
