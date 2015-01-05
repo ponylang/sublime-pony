@@ -15,7 +15,7 @@
 		<key>increaseIndentPattern</key>
 		<string>(?x)
 			 ^\s*(type|interface|trait|primitive|class|actor)\b.*$
-			|^.*\b(if|then|else|elseif|for|in|do|while|repeat|until|try|with|match|object)\b((?!end).)*$
+			|^.*\b(if|then|else|elseif|for|in|do|while|repeat|until|try|with|match|object|recover)\b((?!end).)*$
 			|^.*\([^\)]*$
 			|^.*\[[^\]]*$
 			|^.*=&gt;.*$

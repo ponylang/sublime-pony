@@ -172,12 +172,12 @@
 					<key>name</key>
 					<string>entity.name.class.pony</string>
 				</dict>
-<!-- 				<dict>
+				<dict>
 					<key>match</key>
-					<string>\b(_+[a-z][_a-zA-Z0-9\']*)\b</string>
+					<string>\b(_*[a-z][_a-zA-Z0-9']*)</string>
 					<key>name</key>
-					<string>variable.parameter.pony</string>
-				</dict> -->
+					<string></string>
+				</dict>
 			</array>
 		</dict>
 		<key>keywords</key>
@@ -226,42 +226,42 @@
 					<key>name</key>
 					<string>keyword.control.loop.pony</string>
 				</dict>
-<!-- 				<dict>
+				<dict>
 					<key>match</key>
 					<string>(\-|\+|\*|/(?![/*])|%|&lt;&lt;|&gt;&gt;)</string>
 					<key>name</key>
-					<string>keyword.operator.arithmetic.pony</string>
+					<string></string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(==|!=|&lt;=|&gt;=|&lt;|&gt;)</string>
 					<key>name</key>
-					<string>keyword.operator.comparison.pony</string>
+					<string></string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>\b(is|isnt|not|and|or|xor)\b</string>
 					<key>name</key>
-					<string>keyword.operator.logical.pony</string>
+					<string></string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(=)</string>
+					<string>=</string>
 					<key>name</key>
-					<string>keyword.operator.assign.pony</string>
+					<string></string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(\?|=&gt;)</string>
 					<key>name</key>
-					<string>keyword.operator.body.pony</string>
+					<string></string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>(\||\&amp;|\,|\^)</string>
 					<key>name</key>
-					<string>keyword.operator.type.pony</string>
-				</dict> -->
+					<string></string>
+				</dict>
 			</array>
 		</dict>
 		<key>line-comments</key>
@@ -279,7 +279,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>[^_a-zA-Z0-9']'</string>
+					<string>'</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>
