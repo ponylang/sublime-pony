@@ -106,7 +106,7 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>\b(new|be|fun)\s+(iso|trn|ref|val|box|tag)?\s*([_a-z][_a-zA-Z0-9]*)</string>
+			<string>\b(new|be|fun)\s+(iso|trn|ref|val|box|tag)?\b\s*([_a-z][_a-zA-Z0-9]*)</string>
 		</dict>
 		<key>typedeclarations</key>
 		<dict>
@@ -140,7 +140,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\b(_*[a-z][_a-zA-Z0-9]*)\s*(\(|\[)</string>
+					<string>\b([_a-z][_a-zA-Z0-9]*)\s*(\(|\[)</string>
 				</dict>
 				<dict>
 					<key>captures</key>
@@ -152,7 +152,7 @@
 						</dict>
 					</dict>
 					<key>match</key>
-					<string>\.\s*(_*[a-z][_a-zA-Z0-9]*)\b[^\(\]]</string>
+					<string>\.\s*([_a-z][_a-zA-Z0-9]*)\b[^\(\]]</string>
 				</dict>
 				<dict>
 					<key>captures</key>

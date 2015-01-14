@@ -1,0 +1,5 @@
+{
+  "cmd": ["ponyc"],
+  "file_regex": "^(.+?):(\\d+):(\\d+): (.*)$",
+  "selector": "source.pony"
+}
