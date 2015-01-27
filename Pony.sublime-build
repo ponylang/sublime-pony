@@ -1,5 +1,5 @@
 {
-  "cmd": ["ponyc"],
+  "cmd": ["ponyc", "-rexpr"],
   "file_regex": "^(.+?):(\\d+):(\\d+): (.*)$",
   "selector": "source.pony"
 }
