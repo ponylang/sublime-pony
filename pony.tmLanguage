@@ -216,7 +216,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(if|then|elseif|else|end|match|where|try|with|recover|consume|object)\b</string>
+					<string>\b(if|then|elseif|else|end|match|where|try|with|as|recover|consume|object|identityof)\b</string>
 					<key>name</key>
 					<string>keyword.control.pony</string>
 				</dict>
@@ -338,7 +338,6 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<!-- <string>string.quoted.triple.pony</string> -->
 					<string>variable.parameter.pony</string>
 				</dict>
 				<dict>
