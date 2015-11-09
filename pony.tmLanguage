@@ -111,20 +111,25 @@
 		<key>typedeclarations</key>
 		<dict>
 			<key>captures</key>
-			<dict>
-				<key>1</key>
 				<dict>
-					<key>name</key>
-					<string>keyword.declaration.pony</string>
+					<key>1</key>
+					<dict>
+						<key>name</key>
+						<string>keyword.declaration.pony</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>name</key>
+						<string>keyword.other.capability.pony</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>name</key>
+						<string>entity.name.type.pony</string>
+					</dict>
 				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.pony</string>
-				</dict>
-			</dict>
 			<key>match</key>
-			<string>\b(type|interface|trait|primitive|class|actor)\s+@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
+			<string>\b(type|interface|trait|primitive|class|actor)\s+(iso|trn|ref|val|box|tag)?@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
 		</dict>
 		<key>identifiers</key>
 		<dict>
@@ -198,7 +203,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(var|let)\b</string>
+					<string>\b(var|let|embed|delegate)\b</string>
 					<key>name</key>
 					<string>keyword.other.declaration.pony</string>
 				</dict>
