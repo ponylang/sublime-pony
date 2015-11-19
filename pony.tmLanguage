@@ -129,7 +129,7 @@
 					</dict>
 				</dict>
 			<key>match</key>
-			<string>\b(type|interface|trait|primitive|class|actor)\s+(iso|trn|ref|val|box|tag)?@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
+			<string>\b(type|interface|trait|primitive|struct|class|actor)\s+(iso|trn|ref|val|box|tag)?@?\s*([_A-Z][_a-zA-Z0-9]*)</string>
 		</dict>
 		<key>identifiers</key>
 		<dict>
