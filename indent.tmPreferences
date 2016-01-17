@@ -10,16 +10,18 @@
 	<dict>
 		<key>decreaseIndentPattern</key>
 		<string>(?x)
-			^\s*(then|else|elseif|do|until|end|\|.*=&gt;|=&gt;)
+			 ^\s*(then|else|elseif|do|until|end|\|.*=&gt;|=&gt;)
 		</string>
 		<key>increaseIndentPattern</key>
 		<string>(?x)
-			 ^\s*(type|interface|trait|primitive|class|actor)\b.*$
-			|^.*\b(if|then|else|elseif|for|in|do|while|repeat|until|try|with|match|object|recover)\b((?!end).)*$
-			|^.*\([^\)]*$
-			|^.*\[[^\]]*$
+			 ^\s*(type|interface|trait|primitive|struct|class|actor|new|fun|be)\b.*$
+			|^.*\b(if|then|else|elseif|for|in|do|while|repeat|until|try|with|match|object|lambda|recover)\b((?!end).)*$
 			|^.*=&gt;.*$
 		</string>
+		<key>indentParens</key>
+		<true/>
+		<key>indentSquareBrackets</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
