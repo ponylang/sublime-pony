@@ -251,13 +251,13 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>=</string>
+					<string>(\?|=&gt;)</string>
 					<key>name</key>
 					<string></string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(\?|=&gt;)</string>
+					<string>=</string>
 					<key>name</key>
 					<string></string>
 				</dict>
