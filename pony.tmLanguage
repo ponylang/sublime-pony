@@ -233,6 +233,12 @@
 				</dict>
 				<dict>
 					<key>match</key>
+					<string>(\?|[-=]&gt;)</string>
+					<key>name</key>
+					<string></string>
+				</dict>
+				<dict>
+					<key>match</key>
 					<string>(\-|\+|\*|/(?![/*])|%|&lt;&lt;|&gt;&gt;)</string>
 					<key>name</key>
 					<string></string>
@@ -246,12 +252,6 @@
 				<dict>
 					<key>match</key>
 					<string>\b(is|isnt|not|and|or|xor)\b</string>
-					<key>name</key>
-					<string></string>
-				</dict>
-				<dict>
-					<key>match</key>
-					<string>(\?|=&gt;)</string>
 					<key>name</key>
 					<string></string>
 				</dict>
