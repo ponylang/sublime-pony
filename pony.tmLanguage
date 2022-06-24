@@ -213,7 +213,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(var|let|embed|delegate)\b</string>
+					<string>\b(var|let|embed)\b</string>
 					<key>name</key>
 					<string>keyword.other.declaration.pony</string>
 				</dict>
